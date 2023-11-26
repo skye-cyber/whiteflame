@@ -1,1 +1,1 @@
-from ./whiteflame import restart_program
+from .whiteflame import restart_program
