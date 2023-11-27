@@ -1,5 +1,5 @@
 # whiteflame
-This is a Ddos tool developed by wambua Which is used on LINUX
+This is a Ddos tool developed by wambua Which is used on LINUX,Termux and Windows.
 ## Installation
 
 1. Clone the repository:
