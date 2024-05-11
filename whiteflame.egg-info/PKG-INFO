@@ -1,3 +1,25 @@
+Metadata-Version: 2.1
+Name: whiteflame
+Version: 1.0
+Author: Wambua aka Bullet Angel
+License: MIT
+Keywords: whiteflame
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
 # whiteflame
 This is a Ddos tool developed by wambua Which is used on LINUX,Termux and Windows.
 ## Installation

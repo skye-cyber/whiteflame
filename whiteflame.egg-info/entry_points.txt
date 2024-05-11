@@ -1,0 +1,2 @@
+[console_scripts]
+whiteflame = whiteflame:restart_program
