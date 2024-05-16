@@ -68,7 +68,7 @@ class __Master_DDOS__():
 
         print(f"\033[1;91mTarget ip\
             Host:[\033[1;93m {host}\033[0m]\
-            Ip:  [\033[1;93m{ip}\033[0m]")
+            Ip:  [\033[1;93m{ip\033[0m]")
 
         dynamic_countdown(3)
         self.counter = 0

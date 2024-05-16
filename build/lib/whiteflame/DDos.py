@@ -55,7 +55,7 @@ class __Master_DDOS__():
             # curdir = os.getcwd()
             if host is not None or host != '':
                 connect = 50_000
-            ip = socket.gethostbyname(host)
+                ip = socket.gethostbyname(host)
 
         except ValueError as e:
             print(e)
@@ -66,9 +66,9 @@ class __Master_DDOS__():
         except Exception as e:
             print(e)
 
-        print(f"\033[1;91mTarget ip\
-            Host:[\033[1;93m {host}\033[0m]\
-            Ip:  [\033[1;93m{ip}\033[0m]")
+        print("\033[1;91mTarget ip\
+            Host:[\033[1;93m" + host + "\033[0m]\
+            Ip:  [\033[1;93m" + ip + "\033[0m]")
 
         dynamic_countdown(3)
         self.counter = 0

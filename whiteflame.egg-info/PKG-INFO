@@ -24,6 +24,11 @@ Description-Content-Type: text/markdown
 This is a Ddos tool developed by wambua Which is used on LINUX,Termux and Windows.
 ## Installation
 
+# A
+   ```shell
+   pip install https://github.com/skye-cyber/whiteflame
+   ```
+# B
 1. Clone the repository:
 
    ```shell
@@ -33,7 +38,7 @@ This is a Ddos tool developed by wambua Which is used on LINUX,Termux and Window
 2. Navigate to the project directory:
 
    ```shell
-   cd fconverter
+   cd whiteflame
    ```
 
 3. Install the required dependencies:
@@ -62,5 +67,3 @@ This project is an open source software.
 
 
 Feel free to modify and customize this template according to your specific project requirements and add any additional sections or information that you think would be helpful for users.
-
-# whiteflame
